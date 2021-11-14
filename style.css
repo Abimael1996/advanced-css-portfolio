@@ -20,15 +20,13 @@ p {
     font-size: 1.4em;
 }
 
-
 header {
     display: flex;
-    width: 100%;
+    width: 100vw;
     justify-content: space-between;
     padding: 10px 10px 10px 0;
     background-color: #01255c;
 }
-
 
 nav li {
     display: inline;
@@ -114,7 +112,7 @@ section h2 {
     font-size: 1em;
 }
 
-.my-work .description {
+.img-container .description {
     border: 1px solid #02a3c3;
     background-color:#02a3c3;
     position: relative;
@@ -154,4 +152,105 @@ section h2 {
 .resume img {
     margin-left: 10%;
     width: 50%;
+}
+
+@media screen and (max-width: 414px)  {
+
+    body {
+        width: 100vw;
+    }
+
+    header {
+        flex-direction: column;
+    }
+
+    header h1 {
+        width: 100vw;
+    }
+
+    ul {
+        text-align: center;
+    }
+
+    nav li {
+        display: block;
+    }
+
+    .bckgr-img {
+        width: 100vw;
+        background-image: none;
+    }
+
+    .bckgr-img h2 {
+        display: block;
+        text-align: center;
+        position: static;
+    }    
+
+    main {
+        margin-left: 0;
+    }
+
+    section {
+        flex-direction: column;
+    }
+
+    section h2 {
+        border-bottom: 5px solid #04609b;
+        border-right: none;
+        padding: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .my-work {
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-left: 0%;
+        width: 100%;
+        position: relative;
+    }
+
+    .img-container {
+        width: 100%;
+        margin-top: 2%;
+        margin-right: 0%;
+        height: 200px;
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+    }
+
+    .img-container img {
+        height: 153px;
+        width: 404px;
+    }
+
+    #first-project {
+        width: 100%;
+    }
+
+    h3 {
+        font-size: 1em;
+    }
+
+    .description p {
+        font-size: 0.5em;
+    }
+
+    .img-container .description {
+        width: 100%;
+        text-align: center;
+        position: absolute;
+        bottom: 0;
+    }
+
+    .contact-me ul {
+        margin-top: 10%;
+    }
+
+    .contact-me li {
+        display: block;
+        padding-bottom: 30px;
+    }   
 }
