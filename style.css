@@ -8,30 +8,17 @@
     font-family: serif;
 }
 
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px 10px 0;
+    background-color: var(--dark);
+}
+
 h1 {
     font-size: 5.38em;
     background-color: var(--light);
     padding-left: 50px;
-}
-
-h2 {
-    font-size: 3.84em;
-}
-
-h3 {
-    font-size: 2.74em;
-}
-
-p {
-    font-size: 1.4em;
-}
-
-header {
-    display: flex;
-    width: 100vw;
-    justify-content: space-between;
-    padding: 10px 10px 10px 0;
-    background-color: var(--dark);
 }
 
 nav li {
@@ -65,15 +52,31 @@ nav li a {
 main {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
     margin-left: 10%;
 }
 
 section {
     margin-top: 40px;
     display: flex;
-    align-self: flex-start;
-    width: 100%;
+}
+
+/* CONTINUE REFACTORING HERE */
+
+.about-me p {
+    margin-left: 10%;
+    line-height: 1.5;
+}
+
+h2 {
+    font-size: 3.84em;
+}
+
+h3 {
+    font-size: 2.74em;
+}
+
+p {
+    font-size: 1.4em;
 }
 
 section h2 {
@@ -83,11 +86,6 @@ section h2 {
     color: #04609b;
     text-align: right;
 
-}
-
-.about-me p {
-    margin-left: 10%;
-    line-height: 1.5;
 }
 
 .my-work {
