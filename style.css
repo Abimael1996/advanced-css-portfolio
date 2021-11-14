@@ -121,7 +121,6 @@ section h2 {
     padding: 10px;
 }
 
-
 .img-container:hover {
     filter:brightness(2);
     cursor: pointer;
@@ -154,14 +153,15 @@ section h2 {
     width: 50%;
 }
 
-@media screen and (max-width: 414px)  {
+.resume a {
+    display: none;
+}
 
-    body {
-        width: 100vw;
-    }
+@media screen and (max-width: 414px)  {
 
     header {
         flex-direction: column;
+        padding: 0;
     }
 
     header h1 {
@@ -179,6 +179,7 @@ section h2 {
     .bckgr-img {
         width: 100vw;
         background-image: none;
+        position: absolute;
     }
 
     .bckgr-img h2 {
@@ -189,6 +190,11 @@ section h2 {
 
     main {
         margin-left: 0;
+        margin-top: 30px;
+    }
+
+    .about-me p {
+        margin-top: 10px;
     }
 
     section {
@@ -253,4 +259,19 @@ section h2 {
         display: block;
         padding-bottom: 30px;
     }   
+
+    .resume img {
+        position: absolute;
+        display: none;
+    }
+
+    .resume a {
+        display: block;
+        width: fit-content;
+        font-size: 1.4em;
+        margin: 10px auto;
+        text-decoration: none;
+        color: black;
+        border-bottom: 5px solid #04609b;
+    }
 }
