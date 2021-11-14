@@ -45,7 +45,7 @@ nav li a {
     color: black;
     display: inline-block;
     position: relative;
-    left: 80%;
+    float: right;
     top: 60%;
 }
 
@@ -196,6 +196,7 @@ section h2 {
         display: block;
         text-align: center;
         position: static;
+        float: none;
     }    
 
     main {
@@ -231,15 +232,12 @@ section h2 {
         width: 100%;
         margin-top: 2%;
         margin-right: 0%;
-        height: 200px;
         display: flex;
         flex-wrap: wrap;
         position: relative;
     }
 
     .img-container img {
-        height: 153px;
-        width: 404px;
         filter: grayscale(0);
     }
 
