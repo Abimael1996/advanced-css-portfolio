@@ -62,10 +62,22 @@ section {
 
 /* CONTINUE REFACTORING HERE */
 
-.about-me p {
-    margin-left: 10%;
-    line-height: 1.5;
+.my-info {
+    display: flex;
+    flex-direction: column;
     width: 70%;
+    margin-left: 10%;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+.my-info img {
+    width: 70%;
+    height: 70%;
+}
+
+.about-me p {
+    line-height: 1.5;
 }
 
 h2 {
@@ -211,6 +223,10 @@ section h2 {
         margin-top: 30px;
     }
 
+    .my-info {
+        align-items: center;
+    }
+    
     .about-me p {
         margin-top: 10px;
     }
