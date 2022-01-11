@@ -185,14 +185,16 @@ h3 {
     border-bottom: 5px solid var(--medium);
 }
 
-.resume img {
-    margin-left: 10%;
-    width: 70%;
+.resume a {
+    display: block;
+    font-size: 1.4em;
+    margin: 10px auto;
+    text-decoration: none;
+    color: black;
+    border-bottom: 5px solid var(--medium);
+    height: 40px;
 }
 
-.resume a {
-    display: none;
-}
 
 
 @media screen and (max-width: 768px)  {
@@ -300,14 +302,14 @@ h3 {
     }
     
     #repoIcon, .repoImg {
-        height: 83px;
+        height: 59px;
         width: 12%;
         left: 88%;
         top: 3px;
     }
 
     h3 {
-        font-size: 2.74em;
+        font-size: 1.4em;
     }
 
     .description p {
